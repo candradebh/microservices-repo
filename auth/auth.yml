@@ -2,7 +2,7 @@ spring:
   datasource:
     password: sa
     username: postgres
-    url: jdbc:postgresql://localhost:5432/auth
+    url: jdbc:postgresql://localhost:5432/ca_auth
   jpa:
     hibernate:
       database-platform: org.hibernate.dialect.PostgreSQL9Dialect

@@ -2,7 +2,7 @@ spring:
   datasource:
     password: sa
     username: postgres
-    url: jdbc:postgresql://localhost:5432/transportador
+    url: jdbc:postgresql://localhost:5432/ca_transportador
   jpa:
     hibernate:
       ddl-auto: update
