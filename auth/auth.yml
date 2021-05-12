@@ -5,8 +5,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/ca_auth
   jpa:
     hibernate:
-      database-platform: org.hibernate.dialect.PostgreSQL9Dialect
-      ddl-auto: create
+      ddl-auto: update
       show-sql: true
       temp:
         use_jdbc_metadata_defaults: false
