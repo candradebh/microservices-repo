@@ -1,17 +1,13 @@
 spring: 
-  data: data.sql
   datasource:
     password: sa
     username: postgres
     url: jdbc:postgresql://localhost:5432/ca_auth
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
     hibernate:
       ddl-auto: update
       show-sql: true
-      temp:
-        use_jdbc_metadata_defaults: false
-   
+      
    
      
 
