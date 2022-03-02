@@ -1,4 +1,5 @@
 spring: 
+  data: data.sql
   datasource:
     password: sa
     username: postgres
