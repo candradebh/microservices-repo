@@ -3,7 +3,7 @@ spring:
     password: sa
     username: postgres
     url: jdbc:postgresql://localhost:5432/ca_investimentos
-
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
   jpa:
     properties:
       temp:
@@ -11,8 +11,11 @@ spring:
     hibernate:
       ddl-auto: update
       show-sql: true
-      temp:
-        use_jdbc_metadata_defaults: false
+      jdbc:
+        lob:
+          non_contextual_creation: true
+      
+        
       
 
 
