@@ -1,13 +1,23 @@
-spring: 
+spring:
   datasource:
-    driverClassName: org.postgresql.Driver
     password: sa
     username: postgres
     url: jdbc:postgresql://localhost:5432/ca_auth
   jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+      temp:
+        use_jdbc_metadata_defaults: false
     hibernate:
       ddl-auto: update
       show-sql: true
-      dialect: org.hibernate.dialect.PostgreSQLDialect
+
+      
+        
+      
+
 
      
